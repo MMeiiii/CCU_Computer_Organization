@@ -1,0 +1,5 @@
+題目:Serial Multiplier
+指令:
+iverilog -o mult mult_tb.v --> 編譯
+vvp mult -->執行
+gtkwave mult.vcd -->看波形
