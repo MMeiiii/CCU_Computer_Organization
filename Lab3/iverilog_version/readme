@@ -13,4 +13,4 @@ EXECUTION.v
 MEMORY.v
 testbench.v
 
-
+補:mod_testbench.txt是用mod的指令但FPGA上面跑不動，所以就參考參考吧~
