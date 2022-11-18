@@ -1,5 +1,9 @@
 [iverilog]
-因為放上FPGA的程式碼和使用iverilog有些許不同，因此多創造此版本
+
+1.因在FPGA執行和使用iverilog執行有些微程式碼不同，因此多創造此版本
+2.編譯:iverilog -o test testbenvh.v
+3.可藉由修改MEMORY.v裡的 DM[0] <= xxxx，改變輸入值
+4.可藉由testbench.v裡的 define INSTRUCTION_NUMBERS xxxxx 來修改執行的回合數，因怕沒跑完
 
 包含:
 CPU.v
@@ -8,3 +12,5 @@ INSTRUCTIION_DECODE.v
 EXECUTION.v
 MEMORY.v
 testbench.v
+
+
