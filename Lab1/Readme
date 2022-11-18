@@ -3,3 +3,5 @@
 環境:
 jre-8u341-windows-x64.exe 
 Mars4_5.jar
+
+version_2的創建原因是因為在FPGA上面不能用rem這個指令
