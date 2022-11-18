@@ -34,7 +34,7 @@ integer i;
 
 always @(posedge clk or posedge rst)
 	if(rst)begin
-		DM[0] <= 32'd6;
+		DM[0] <= 32'd6;		//此行修改input
 		
 		for (i=1;i<128;i=i+1)
           	DM[i] <= 32'b0;
