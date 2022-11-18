@@ -1,2 +1,10 @@
-使用iverilog去測程式碼對不對
+[iverilog]
 因為放上FPGA的程式碼和使用iverilog有些許不同，因此多創造此版本
+
+包含:
+CPU.v
+INSTRUCTION_FETCH.v
+INSTRUCTIION_DECODE.v
+EXECUTION.v
+MEMORY.v
+testbench.v
