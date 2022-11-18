@@ -1,5 +1,5 @@
 `define CYCLE_TIME 20
-`define INSTRUCTION_NUMBERS 500
+`define INSTRUCTION_NUMBERS 500		//此行修改INSTRUCTION_NUMBERS
 `timescale 1ns/1ps
 `include "CPU.v"
 
