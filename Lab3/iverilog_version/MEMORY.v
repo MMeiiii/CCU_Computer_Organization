@@ -46,16 +46,16 @@ always @(posedge clk or posedge rst)
 	if (rst) begin
 		MW_MemtoReg 		<= 1'b0;
 		MW_RegWrite 		<= 1'b0;
-		MDR					<= 32'b0;
-		MW_ALUout			<= 32'b0;
-		MW_RD				<= 5'b0;
+		MDR			<= 32'b0;
+		MW_ALUout		<= 32'b0;
+		MW_RD			<= 5'b0;
 	end
 	else begin
 		MW_MemtoReg 		<= XM_MemtoReg;
 		MW_RegWrite 		<= XM_RegWrite;
-		MDR					<= (XM_MemRead)?DM[ALUout[6:0]]:MDR;
-		MW_ALUout			<= ALUout;
-		MW_RD 				<= XM_RD;
+		MDR			<= (XM_MemRead)?DM[ALUout[6:0]]:MDR;
+		MW_ALUout		<= ALUout;
+		MW_RD 			<= XM_RD;
 	end
 
 endmodule
