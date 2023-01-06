@@ -1,0 +1,21 @@
+將編譯完的執行檔命名為cache
+指令格式：
+cache [cache size] [block size] [associativity] [replace policy] [file name]
+變數規格：
+cache size: 8, 16, …, 256 (KB)
+block size: 4, 8, 16, …, 128 (B)
+associativity: 1 (direct mapped), 2, 4, 8, f (fully associative)
+replace-policy: FIFO, LRU
+輸入範例
+cache 8 32 1 FIFO gcc.din
+
+輸出要有這些項目
+1.input file
+2.demand fetch
+3.cache hit
+4.cache miss
+5.miss rate
+6.read data
+7.write data
+8.byte from memory
+9.byte to memory 
